@@ -1,0 +1,14 @@
+{
+  "name": "back-config-plugins",
+  "owner": {
+    "name": "CamScanner"
+  },
+  "plugins": [
+    {
+      "name": "back-config",
+      "description": "CamScanner backend configuration management plugin. Query, update, rollback, and manage back_config feature flags.",
+      "source": "./plugins/back-config",
+      "category": "development"
+    }
+  ]
+}

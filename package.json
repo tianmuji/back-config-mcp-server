@@ -1,0 +1,32 @@
+{
+  "name": "@camscanner/back-config-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for managing CamScanner backend configuration visualization",
+  "main": "dist/index.js",
+  "bin": {
+    "back-config-mcp-server": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "plugins",
+    ".claude-plugin"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "back-config",
+    "configuration"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "playwright-core": "^1.59.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  }
+}

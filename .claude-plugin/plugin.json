@@ -1,0 +1,8 @@
+{
+  "name": "back-config",
+  "description": "CamScanner backend configuration management plugin. Query, update, and manage back_config feature flags and conditions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CamScanner"
+  }
+}

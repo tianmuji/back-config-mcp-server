@@ -1,0 +1,8 @@
+{
+  "name": "back-config",
+  "description": "CamScanner backend configuration management plugin.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CamScanner"
+  }
+}

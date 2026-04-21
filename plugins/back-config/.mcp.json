@@ -1,0 +1,9 @@
+{
+  "back-config": {
+    "command": "npx",
+    "args": ["-y", "@camscanner/back-config-mcp-server@latest"],
+    "env": {
+      "OPERATE_BASE_URL": "https://operate.intsig.net"
+    }
+  }
+}
