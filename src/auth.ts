@@ -145,7 +145,7 @@ export async function startSsoLogin(config: SsoConfig): Promise<OperateCredentia
       throw new Error("No cookies captured after login. Please try again.");
     }
 
-    await page.goto(config.operateBaseUrl + "/site/get-config", { waitUntil: "domcontentloaded", timeout: 15000 });
+    await page.goto(config.operateBaseUrl + "/camscanner/back_config", { waitUntil: "domcontentloaded", timeout: 15000 });
 
     const allCookies = (await context.cookies()).filter(c =>
       c.domain.includes("intsig.net") || c.domain.includes("operate")

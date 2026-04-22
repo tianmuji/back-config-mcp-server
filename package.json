@@ -1,6 +1,6 @@
 {
   "name": "@camscanner/back-config-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP Server for managing CamScanner backend configuration visualization",
   "main": "dist/index.js",
   "bin": {

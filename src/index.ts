@@ -134,7 +134,10 @@ server.tool(
 
     try {
       const res = await client.getConfigMessage("all", platform);
-      const data = res.errno === 0 ? res.data : res;
+      if (res.errno !== 0) {
+        return { content: [{ type: "text", text: `API error (errno: ${res.errno}): ${res.message || res.errmsg || JSON.stringify(res)}` }] };
+      }
+      const data = res.data;
       return { content: [{ type: "text", text: formatKeyList(Array.isArray(data) ? data : []) }] };
     } catch (err: any) {
       return { content: [{ type: "text", text: `Error: ${err.message}` }] };
@@ -156,8 +159,10 @@ server.tool(
 
     try {
       const res = await client.getConfigMessage(key, platform);
-      const data = res.errno === 0 ? res.data : res;
-      return { content: [{ type: "text", text: formatConfigDetail(data) }] };
+      if (res.errno !== 0) {
+        return { content: [{ type: "text", text: `API error (errno: ${res.errno}): ${res.message || res.errmsg || JSON.stringify(res)}` }] };
+      }
+      return { content: [{ type: "text", text: formatConfigDetail(res.data) }] };
     } catch (err: any) {
       return { content: [{ type: "text", text: `Error: ${err.message}` }] };
     }
