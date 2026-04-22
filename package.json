@@ -15,6 +15,10 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.intsig.net/"
+  },
   "keywords": [
     "mcp",
     "back-config",
