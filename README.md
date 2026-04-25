@@ -48,6 +48,15 @@ claude plugin install back-config@camscanner-plugins
 
 android, ios, web, ios_hd, ios_plus, harmony
 
+## 使用示例
+
+```
+> 查看 Android 平台的所有配置 key
+> 获取 show_gpt 配置的详情
+> 帮我回退 xxx 配置到上一版本
+> 查看 AB 实验列表
+```
+
 ## 开发者指南
 
 ### 发布新版本
